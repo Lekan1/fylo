@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root{
+    --ralewayFont : "Raleway", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1C2431;
+    overflow-x: hidden;
+    font-family: "Open sans", Geneva, Tahoma, sans-serif;
+}
+.navigation{
+    padding: 0.9rem;
+    margin: 0.2rem;
+    display: grid;
+    grid-template-columns: 3fr 0.8fr;
+    color: #fff;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    justify-content: flex-end;
+}
+.links li{
+    font-size: 16px;
+    color: #fff;
+}
+.image-box{
+    background: url("img/bg-curvy-desktop.svg");
+    background-position: 0 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 1rem;
+    margin-top: 3rem;
+}
+.image-container img{
+    display: block;
+    margin: 0 auto;
+}
+.image-box .text-container{
+    z-index: -1;
+    height: 10vh;
+}
+.text-container h1{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Raleway", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main{
+    margin-top: -1px;
+    background-color: #181F2B;
+    height: 50vh;
+    font-family: "Raleway", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main .main-details{
+    font-weight: 400;
+    line-height: 27px;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+main button{
+    display: block;
+    border-radius: 30px;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 50%;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #62DDD8, #3CABCE);
+}
+main button:hover{
+    background: linear-gradient(to right,#3CABCE, #62DDD8,); 
+}
+.container-one{
+    padding: 4rem;
+    background-color: #181F2B;
+    display: grid;
+    color: #fff;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-family: var(--ralewayFont);
+}
+.features-one, .features-two{
+    margin: 2rem;
+}
+.features-one h1 , .features-two h1{
+    margin: 1rem;
+    font-size: 21px;
+    line-height: 42px;
+}
+.features-one p , .features-two p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.productive-section{
+    display: grid;
+    color: #fff;
+    padding: 4rem;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #181F2B;
+    height: 100vh;
+}
+.text-section{
+    padding-top: 2rem;
+}
+
+.text-section h1{
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 0.9rem;
+    font-family: var(--ralewayFont);
+    line-height: 62px;
+}
+.text-section p{
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0.9rem;
+    font-family: var(--ralewayFont);
+}
+.text-section a{
+    padding: 0.9rem;
+    font-weight: 400;
+    color: #62E0D9;
+    font-size: 16px;
+    font-family: "Open sans",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.testimonial-section{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    background-color: #181F2B;
+    padding: 4.2rem;
+    color: #fff;
+    position: relative;
+}
+.testimonial-section .remote-image{
+    position: absolute;
+    top: 60px;
+    left: 46px;
+}
+.card-one{
+    z-index: 1;
+    background-color: #202A3C;
+    margin: 1rem;
+    padding: 2.4rem;
+    border-radius: 20px;
+}
+.testimonial-section p:nth-child(1){
+    font-size: 14px;
+    line-height: 28px;
+    font-family: var(--ralewayFont)
+}
+.testimonial-section .card-one .testimonial-details img{
+    display: block;
+}
+.testimonial-section .card-one .testimonial-details{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
+}
+.testimonial-section .card-one .testimonial-details img{
+    width: 70%;
+    border-radius: 50%;
+}
+.testimonial-section .card-one .testimonial-details h1{
+    font-family: "Open sans" , serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+}
+.testimonial-section .card-one .testimonial-details p{
+    font-family: var(--ralewayFont);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.access-card{
+    margin-bottom: 2rem;
+    z-index: 1;
+    width: 50%;
+    margin: 2rem auto;
+    background-color: #202A3C;
+    padding: 2.5rem;
+    text-align: center;
+}
+.access-card h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 42px;
+    font-family: var(--ralewayFont);
+}
+.access-card p{
+    color: #fff;
+    font-size: 14px;
+    font-family: var(--ralewayFont);
+    line-height: 28px;
+    padding: 0.6rem;
+}
+.form-section input{
+    padding: 15px 30px;
+    width: 70%;
+    border: none;
+    border-radius: 20px;
+}
+.form-section input::placeholder{
+    font-family: var(--ralewayFont);
+}
+.form-section button{
+    display: block;
+    border-radius: 30px;
+    margin: 22px auto 0;
+    padding: 15px 0;
+    width: 50%;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(to right, #62DDD8, #3CABCE);
+}
+.footer-setup{
+    font-family: var(--ralewayFont);
+    background-color: #0B1523;
+    color: #fff;
+    padding: 5rem;
+    display: grid;
+    grid-column-gap: 32px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer-setup p{
+    font-family: var(--ralewayFont);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.footer-setup .footer-2, .footer-3, .footer-4, .footer-5{
+    padding-top: 2rem;
+    margin: 1rem;
+}
+.footer-setup li{
+    list-style: none;
+    margin: 1rem;
+}
+.footer-setup .footer-1 p img{
+    margin: .4rem;
+    padding: 0.1rem;
+}
+.footer-setup .footer-2 ul img{
+    width: 14px;
+}
+.footer-setup .footer-2 ul li{
+    font-size: 14px;
+}
+.footer-setup .footer-5 img{
+    margin: 1rem;
+}
+@media( max-width : 800px) {
+    .container-one{
+        display: block;
+    }
+    .text-section{
+        display: block;
+    }
+    .testimonial-section{
+        display: block;
+    }
+    
+}
